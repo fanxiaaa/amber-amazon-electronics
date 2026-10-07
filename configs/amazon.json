@@ -1,0 +1,90 @@
+{
+  "seeds": [
+    20222023,
+    20222025,
+    20222032,
+    20222034
+  ],
+  "learning_rates": {
+    "baseline": 0.0005,
+    "kd": 0.0005,
+    "loop": 0.001,
+    "kd_loop": 0.001,
+    "amber_tokens": 0.0005,
+    "kd_amber": 0.0005,
+    "hstu": 0.0005,
+    "hstu_amber_late": 0.001,
+    "hstu_raw_late": 0.001
+  },
+  "lr_grid": [
+    0.0001,
+    0.0005,
+    0.001
+  ],
+  "batch_size": 256,
+  "epochs": 1,
+  "gradient_clip": 10.0,
+  "dmin": {
+    "history_length": 100,
+    "embedding_dim": 64,
+    "dnn_hidden_units": [
+      1024,
+      512,
+      256
+    ],
+    "num_heads": 8,
+    "attention_hidden_units": [
+      256,
+      128
+    ],
+    "position_dim": 4,
+    "attention_dropout": 0.1,
+    "net_dropout": 0.1,
+    "embedding_l2": 0.005
+  },
+  "hstu": {
+    "width": 128,
+    "heads": 4,
+    "layers": 2
+  },
+  "loop_encoder": {
+    "dimension": 32,
+    "heads": 4,
+    "attention_hidden": [
+      80,
+      40
+    ],
+    "activation": "ReLU",
+    "dropout": 0.0,
+    "position_dim": 4
+  },
+  "cache_history_length": 50,
+  "token_dimension": 896,
+  "autoencoder_seed": 20261012,
+  "projection_seed": 20261019,
+  "auxiliary_seeds": {
+    "20222023": 20261013,
+    "20222025": 20261015,
+    "20222032": 20261022,
+    "20222034": 20261024
+  },
+  "gradient_scale": 1.0,
+  "label_scale": 1.0,
+  "loss_weight": 1.0,
+  "upstream": {
+    "seed": 20222023,
+    "alignment_lr": 0.0003,
+    "joint_tokenizer_lr": 0.0001,
+    "joint_llm_lr": 1e-05,
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0,
+    "batch_size": 256,
+    "microbatch": 4
+  },
+  "pretrained_model": {
+    "id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "revision": "7ae557604adf67be50417f59c2c2f167def9a775",
+    "model_safetensors_sha256": "fdf756fa7fcbe7404d5c60e26bff1a0c8b8aa1f72ced49e7dd0210fe288fb7fe",
+    "config_sha256": "18e18afcaccafade98daf13a54092927904649e1dd4eba8299ab717d5d94ff45"
+  }
+}

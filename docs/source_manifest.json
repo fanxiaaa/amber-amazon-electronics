@@ -1,0 +1,22 @@
+{
+  "source_commit": "ab2dbcd05ab58d2f30254d3a784b5cd3366ac662",
+  "historical_result_commit": "c23de4c93d277dff39cae462af50d2d910dc2529",
+  "source_files": {
+    "src/amber/amazon_dmin.py": "1dc41e427e3736f804bda89b907033e42e1f124f12960c4160f13a9d8e2df028",
+    "src/amber/amazon_kd.py": "1ac2a1e5aab061eed2c7491e2c3f9357b5fc1b6cd00435582a7a4f2d4a77786b",
+    "src/amber/dmin_layers.py": "fbd20589b32843db1f8eeb08f1f183ece1097a585395ba076d9b8d9467e7c22e",
+    "src/amber/hstu_late.py": "988a8e47d6bafa73f17de35f998d1cd06c64c4547afe6f1c57a453ccfd68cbc3",
+    "src/amber/hstu_transfer.py": "26f9ce0e950b395ed67e8386733e2025f8a486358fdee5af10aac8d4b8364917",
+    "src/amber/amazon_pretrained.py": "3dc209e7a22aaa00827dd8600610254dbd75ac6b076e37e976358d33604e53a2",
+    "src/amber/model.py": "ac7bf6ce7631c718c6780ccc5ecc320be6ceb1b2336e6e17d52eeb7a8821f77b",
+    "src/amber/amazon_transfer.py": "bf59000b0422064d080666c41682b63a542491ad4e2cccbba538914e27e6a782"
+  },
+  "numerical_source_sha256": {
+    "results/amazon_four_seed_nine_arm_20261006.json": "04813b3c1fd5e2f25a1ef3b5f8864da23d144738c21fa61a6e6cb5fc1b1adb0a",
+    "results/amazon_four_seed_nine_arm_uncertainty_20261006.json": "9a89ed4c27ca02342f781374c3b9bccdcb4e3b3ad42133f914cb6664dc1d9ab4"
+  },
+  "changes": "Four downstream seeds contain nine arms and 36 cells. Twelve missing DMIN-family fits were completed with original research builders; 24 existing cells were reused. The original HSTU+history branch was restored in portable code. Portable entry points have synthetic checks, not a full-data replay.",
+  "experiment_code_commit": "e889c33",
+  "uncertainty_code_commit": "f7ae83d",
+  "research_result_commit": "18cf6ec4ac086311e715592f3b407e7776c97e3f"
+}

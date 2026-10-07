@@ -1,0 +1,21 @@
+[project]
+name = "amber-amazon-electronics"
+version = "0.1.0"
+description = "Exploratory Amazon Electronics study of frozen AMBER history features"
+requires-python = ">=3.12,<3.13"
+license = "Apache-2.0"
+dependencies = [
+    "torch==2.14.0",
+    "numpy>=2.0",
+    "scikit-learn>=1.5",
+    "transformers==4.57.1",
+    "safetensors>=0.4.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/amber"]
+

@@ -1,0 +1,18 @@
+{
+  "upstream": "https://github.com/reczoo/FuxiCTR",
+  "revision": "b4ce3b518e49fc3d1077791a6469f3e728f07b8a",
+  "source_sha256": {
+    "fuxictr/pytorch/layers/activations.py": "3dda5d26651770123ccef4af2a9631d062764a22eb5f0c76aa8cde626f94c542",
+    "fuxictr/pytorch/layers/blocks/mlp_block.py": "c0447a79f6d147857861d3dfb37ea7ed4d82a12d53c1735e8f6a3f908e3c1a04",
+    "fuxictr/pytorch/layers/attentions/dot_product_attention.py": "26b5a588159abfd54b5f05c807ccbc8d11e59105a8920e9a16fed2bbbc95adcf",
+    "model_zoo/DMIN/model/DMIN.py": "8d1c8f5f9f229a88567b5902b4daea708a5c8a290bc736439e43d14315014aa8",
+    "LICENSE": "8cf22444d62b453eaabead39dc544483d2e4005b2e1c7498484da0cc5f8449d0"
+  },
+  "modifications": [
+    "retain DMIN refiner/extractor/target-attention classes with minimal MLP/Dice/dot-product dependencies",
+    "replace incorrect float 0/1 MHA mask with boolean exclusion mask",
+    "disable unused attention weights",
+    "allow position slicing; training retains fixed100 padding"
+  ],
+  "bars_revision": "5b5e61fe2e4ddf676dd12984365da0ae775fb863"
+}

@@ -1,0 +1,6 @@
+AMBER Amazon Electronics research adapters
+Copyright 2026 the project contributors.
+
+src/amber/dmin_layers.py includes adapted FuxiCTR code. Original copyright
+headers are preserved. See licenses/FUXICTR_LICENSE.txt and docs/REVIEW.md.
+Dataset and pretrained model weights are not included or relicensed.
