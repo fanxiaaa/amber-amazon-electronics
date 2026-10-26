@@ -84,8 +84,7 @@ Each user has one positive and one negative test candidate, so NE and its
 interval equal LogLoss / ln(2). For a paired comparison, subtract model losses
 within each draw; do not subtract endpoints of separate model intervals.
 
-The test cohort was previously viewed during development; model capacity,
-upstream cost and cumulative tuning effort are not equalized.
+
 
 ## Provenance
 
